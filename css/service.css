@@ -1,0 +1,37 @@
+/* Service section  */
+.service{
+    background-color: var(--lg-lightgraycolor);
+    width: 100vw;
+}
+.service-item{
+    width: 50%;
+}
+.service .section-title{
+    text-align: left;
+    font-size: 35px;
+}
+.service .section-header .line{
+    margin: 0 0 75px 0;
+}
+.service-item-desc{
+    color: var(--lightgraycolor);
+    line-height: 1.6;
+    width: 90%;
+}
+ .service-list li{
+    color: var(--lightgraycolor);
+} 
+.service-list li i{
+    color: var(--maincolor);
+    border: 1px solid var(--maincolor);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 7px 5px;
+}
+.service-item-img{
+    width: 100%;
+}
+.service-item-img img{
+    width: 100%;
+}

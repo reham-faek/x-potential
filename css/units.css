@@ -1,0 +1,54 @@
+.mg-b-10{
+    margin-bottom: 10px;
+}
+.mg-b-15{
+    margin-bottom: 15px;
+}
+.mg-b-20{
+    margin-bottom: 20px;
+}
+.mg-b-30{
+    margin-bottom: 30px;
+}
+.mg-b-50{
+    margin-bottom: 50px;
+}
+.mg{
+    margin: 0 3%;
+}
+.overflow-hidden{
+    overflow: hidden;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.float-left{
+    float: left;
+}
+.width-31{
+    width: 31%;
+}
+.width-100{
+    width: 100%;
+}
+.height-100{
+    height: 100%;
+}
+.align-center{
+    text-align: center;
+}
+.display-block{
+    display: block;
+}
+.inline-block{
+    display: inline-block;
+}
+.posit-relative{
+    position: relative;
+}
+.posit-absolute{
+    position: absolute;
+}

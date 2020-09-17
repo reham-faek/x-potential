@@ -1,0 +1,147 @@
+/*
+1-common styles
+2-General styles
+3-sections
+    3.0 Header section 
+    3.1 Home section 
+    3.2 About section 
+    3.3 Portfolio section 
+    3.4 Service section 
+    3.5 Prices section 
+    3.6 Team section 
+    3.7 Blog Page 
+    3.8 Contact section 
+    3.9 Footer section
+*/
+/*
+1- Common styles
+    -overlay
+    -continer
+    -opacity hover
+    -Section header
+    -section Padding
+    -hover effect 1(left to right)
+    -hover effect 2(top to botton)
+*/
+.overlay{
+    /* background-color: var(--blackcolor); */
+    height: 100%;
+    width: 100%;
+    background-color: var(--lightblackcolor);
+    opacity: 0.5;
+} 
+.hover-opacity{
+     transition: opacity .5s;
+}
+.hover-opacity:hover{
+    opacity: 0.8;
+}
+
+/*2-General styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}    
+body{
+    font-family: 'Vareia round',sans-serif;
+}
+.container{
+    width: 84.4%;
+    margin: auto;
+}
+:root{
+    --maincolor:#153c8b;
+    --lightmaincolor:#6195FF;
+    --whitecolor:#fff;
+    --blackcolor:#000000;
+    --lightblackcolor:#1C1D21;
+    --graycolor:#999999;
+    --lightgraycolor:#9f9f9f;
+    --lg-lightgraycolor:#e8e8e8;
+    --lg-lg-lightgraycolor:#f4f4f4
+}
+.clear{
+    clear: both;
+}
+button{
+   
+    font-family: inherit;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.pd-y{
+    padding: 120px 0;
+}
+.section-header .section-title{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.section-header .line{
+    margin:0 auto 70px auto;
+    width: 40px;
+    height: 4px;
+    background-color:var(--maincolor) ;
+    margin-bottom: 75px;
+}
+/* .ltr-effect,
+.tb-effect{
+    position: relative;
+} */
+.ltr-effect:after ,
+.tb-effect:after{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background-color: rgb(20, 20, 20);
+    z-index: -1;
+}
+.ltr-effect::after{
+    width: 0;
+    height: 100%;
+    transition: width 0.5s;
+}
+.tb-effect::after{
+    width:100% ;
+    height: 0;
+    transition: height 0.3s;
+}
+.ltr-effect:hover:after{
+    width: 100%;
+}
+.tb-effect:hover:after{
+    height: 100%;
+}
+/*3-sections styles*/
+.top-down{
+    position: fixed;
+    display: block;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    background-color: #6195FF;
+    z-index: 9999;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+.top-down:hover{
+    opacity: 0.7;
+}
+.top-down::after{
+    content: "\f106";
+    font-family: 'fontAwesome';
+}

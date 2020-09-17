@@ -1,0 +1,63 @@
+/* Contact section  */
+.contact-item .icon{
+    color:  var( --lightmaincolor);
+}
+.contact-item-title{
+    font-size: 23px;
+}
+.contact-item-text{
+    color:  var(--graycolor);
+    font-size: 17px;
+}
+.contact-form{
+    width: 67%;
+    margin: auto;
+}
+.input{
+    border: 0;
+    background-color: var(--lg-lg-lightgraycolor);
+    color: var(--lg-lightgraycolor);
+    padding: 0 0 0 10px;
+    font-size: inherit;
+    font-family: inherit;
+    width: 98.5%;
+    height: 40px;
+    border-bottom: 2px solid #EEE;
+    opacity: 0.5;
+    transition: border-color 0.2s, opacity 0.2s;
+}
+input[name="name"]{
+    width: 48%; 
+    margin-right: 15px;
+}
+input[name="email"]{
+    width: 48%;
+}
+input[name="subject"]{
+    width: 98.5%;
+}
+.input.textarea {
+    padding: 15px 0 0 10px;
+    min-height: 80px;
+    resize: vertical;
+}
+input[type="button"]{
+    width: 185px;
+    height: 49px;
+    border: 0;
+    border-radius: 5px;
+    background-color:  var( --lightmaincolor);
+    color: var(--whitecolor);
+    font-size: inherit;
+    font-family: inherit;
+    margin: 0 0 0 35%;
+    cursor: pointer;
+}
+.input:focus{
+    border-color:#6195ff;
+    opacity: 1;
+    color: #000;
+}
+/* input[type="button"]:hover{
+    opacity: 0.8;
+} */

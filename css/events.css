@@ -1,0 +1,63 @@
+/* events section  */
+.events{
+    background-color: var(--lg-lightgraycolor);
+}
+.events-item{
+    padding: 40px;
+    border: 1px solid var(--lightgraycolor);
+    height: 400px;
+}
+.layer-content{
+    width:100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+}
+.layer-info{
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.layer-content .catogary{
+    color: yellowgreen;
+    margin-bottom: 5px;
+    top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    opacity: 0;
+    transition: top 0.5s, opacity 0.5s;
+    transition-delay:0.2s;
+}
+.layer-content-title{
+    font-size: 20px;
+    color: var(--whitecolor);
+    top: 10px;
+    opacity: 0;
+    transition: top 0.5s, opacity 0.5s;
+    transition-delay:0.3s;
+}
+.layer-content a i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: var(--whitecolor);
+    background-color: var(--maincolor);
+    top: 10px;
+    opacity: 0;
+    transition: top 0.5s, opacity 0.5s;
+    transition-delay:0.3s ;
+}
+.events-item:hover .layer-content,
+.events-item:hover .layer-content-title,
+.events-item:hover .layer-content .catogary,
+.events-item:hover .layer-content a i{
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}

@@ -1,0 +1,22 @@
+/* courses section  */
+.courses-item{
+    height: 476px;
+    border: 1px solid var(--lg-lightgraycolor);
+    padding: 46px  0;
+}
+.courses-item-purchase{
+    width:177px;
+    height: 45px;
+    border: 0;
+position: relative;
+    top: 300px;
+    background: none;
+    border: 2px solid var(--maincolor);
+    border-radius: 2px;
+    color: var(--maincolor);
+    font-size: 17px;
+    cursor: pointer;
+}
+.courses-item:hover .courses-item-purchase:active{
+    border: var(--blackcolor);
+}
